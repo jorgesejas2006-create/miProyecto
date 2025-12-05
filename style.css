@@ -22,8 +22,7 @@ body {
 img {
   max-width: 100%;
 }
- 
-.topbar {
+.menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,24 +31,24 @@ img {
   border-bottom: 1px solid #2b0000;
 }
  
-.topbar-left {
+.menu-left {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
  
-.topbar img {
+.menu img {
   width: 40px;
   height: 40px;
 }
  
-.topbar-left h1 {
+.menu-left h1 {
   margin: 0;
   font-size: 1.3rem;
   font-weight: 800;
 }
  
-.topbar-left p {
+.menu-left p {
   margin: 0;
   font-size: .85rem;
   opacity: .7;
