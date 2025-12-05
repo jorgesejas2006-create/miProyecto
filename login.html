@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - GameHub</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: var(--bg-light);
+      padding: 40px;
+      border-radius: var(--radius);
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+      border: 1px solid var(--border);
+    }
+
+    .login-container img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .login-container h2 {
+      color: var(--red-light);
+      margin-bottom: 25px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      color: var(--text);
+      font-size: 16px;
+    }
+
+    .login-container input:focus {
+      outline: none;
+      border-color: var(--red-light);
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: none;
+      border-radius: var(--radius);
+      background: var(--red-dark);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .login-container button:hover {
+      background: var(--red-light);
+    }
+
+    .login-container a {
+      display: block;
+      margin-top: 12px;
+      color: var(--red-light);
+      text-decoration: none;
+    }
+
+    .login-container a:hover {
+      color: var(--red);
+      padding-left: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+
+  <img src="imagenes/logo1.png" alt="GameHub Logo">
+  <h2>Iniciar Sesión</h2>
+  <form action="#" method="POST">
+    <input type="email" name="email" placeholder="Correo electrónico" required>
+    <input type="password" name="password" placeholder="Contraseña" required>
+    <button type="submit">Ingresar</button>
+  </form>
+  <a href="#">¿Olvidaste tu contraseña?</a>
+  <a href="#">Registrarse</a>
+</div>
+
+</body>
+</html>
+
+

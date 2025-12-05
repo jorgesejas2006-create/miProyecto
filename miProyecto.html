@@ -2,12 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>GameHub</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="paginaPrincipal.js"></script>
 </head>
 <body>
- 
-  <header class="topbar">
+
+<header class="topbar">
     <div class="topbar-left">
         <img src="imagenes/logo1.png" alt="logo">
         <div>
@@ -15,24 +17,26 @@
             <p>Comunidad Gaming</p>
         </div>
     </div>
- 
+
     <div class="search">
         <input type="text" placeholder="Buscar juegos...">
     </div>
- 
+
     <div class="topbar-right">
         <span class="notify">🔔</span>
-        <button class="profile-btn">👤 Perfil</button>
+     <a href="login.html" class="profile-btn">👤 Iniciar Sesión</a>
     </div>
 </header>
-  <main>
-    <section>
-      <h2>RPG (5)</h2>
-      <a href="#">Ver todos</a>
-      <div class="cards">
+<main>
+<section>
+  <h2>RPG </h2>
+  <div class="carousel">
+      <button class="arrow left">❮</button>
+
+      <div class="cards scroll">
         <article>
           <img src="imagenes/zenless-zone-zero-czvdx.jpg" alt="zenless zone zero">
-          <h3>zenless zone zero</h3>
+          <h3>Zenless Zone Zero</h3>
           <span>RPG</span>
           <span>4.8</span>
           <p>Un juego de rol de mundo abierto con elementos de acción</p>
@@ -40,9 +44,8 @@
             <span>5.2M</span>
             <span>45.8K</span>
           </div>
-          <a href="paginas/pagina_comunidad.html">Ver Comunidad</a>
+          <a href="pagina_zzz.html">Ver Comunidad</a>
         </article>
- 
         <article>
           <img src="imagenes/eldenring.jpg" alt="Elden Ring">
           <h3>Elden Ring</h3>
@@ -55,7 +58,7 @@
           </div>
           <a href="paginaEld.html">Ver Comunidad</a>
         </article>
- 
+
         <article>
           <img src="imagenes/witcher.webp" alt="The Witcher 3">
           <h3>The Witcher 3</h3>
@@ -68,14 +71,20 @@
           </div>
           <a href="paginawitc.html">Ver Comunidad</a>
         </article>
+         
+
       </div>
-    </section>
-    <section>
-      <h2>FPS (5)</h2>
-      <a href="#">Ver todos</a>
- 
-      <div class="cards">
- 
+
+      <button class="arrow right">❯</button>
+  </div>
+</section>
+
+<section>
+  <h2>FPS </h2>
+  <div class="carousel">
+      <button class="arrow left">❮</button>
+
+      <div class="cards scroll">
         <article>
           <img src="imagenes/valorant.jpg" alt="Valorant">
           <h3>Valorant</h3>
@@ -86,9 +95,9 @@
             <span>6.5M</span>
             <span>52.1K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="paginaValorant.html">Ver Comunidad</a>
         </article>
- 
+
         <article>
           <img src="imagenes/csgo2.webp" alt="CS:GO 2">
           <h3>CS:GO 2</h3>
@@ -101,7 +110,7 @@
           </div>
           <a href="#">Ver Comunidad</a>
         </article>
- 
+
         <article>
           <img src="imagenes/apex2.jpg" alt="Apex Legends">
           <h3>Apex Legends</h3>
@@ -112,18 +121,19 @@
             <span>5.9M</span>
             <span>48.6K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="paginaApex.html">Ver Comunidad</a>
         </article>
- 
       </div>
-    </section>
- 
-    <section>
-      <h2>Aventura (5)</h2>
-      <a href="#">Ver todos</a>
- 
-      <div class="cards">
- 
+
+      <button class="arrow right">❯</button>
+  </div>
+</section>
+<section>
+  <h2>Aventura </h2>
+  <div class="carousel">
+      <button class="arrow left">❮</button>
+
+      <div class="cards scroll">
         <article>
           <img src="imagenes/zelda.jpg" alt="The Legend of Zelda">
           <h3>The Legend of Zelda</h3>
@@ -134,9 +144,9 @@
             <span>4.7M</span>
             <span>41.2K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="paginaZelda.html">Ver Comunidad</a>
         </article>
- 
+
         <article>
           <img src="imagenes/god-of-war-saga-logo.jpg" alt="God of War">
           <h3>God of War</h3>
@@ -147,9 +157,8 @@
             <span>3.9M</span>
             <span>35.7K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="paginaGod.html">Ver Comunidad</a>
         </article>
- 
         <article>
           <img src="imagenes/the last of as.avif" alt="The Last of Us">
           <h3>The Last of Us</h3>
@@ -160,17 +169,19 @@
             <span>4.2M</span>
             <span>39.4K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="pagina_lastofus.html">Ver Comunidad</a>
         </article>
- 
       </div>
-    </section>
- 
-    <section>
-      <h2>MOBA (3)</h2>
- 
-      <div class="cards">
- 
+
+      <button class="arrow right">❯</button>
+  </div>
+</section>
+<section>
+  <h2>MOBA </h2>
+  <div class="carousel">
+      <button class="arrow left">❮</button>
+
+      <div class="cards scroll">
         <article>
           <img src="imagenes/lol.webp" alt="League of Legends">
           <h3>League of Legends</h3>
@@ -181,9 +192,9 @@
             <span>9.1M</span>
             <span>78.4K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="pagina_lol.html">Ver Comunidad</a>
         </article>
- 
+
         <article>
           <img src="imagenes/dota2.jpg" alt="Dota 2">
           <h3>Dota 2</h3>
@@ -194,9 +205,9 @@
             <span>7.3M</span>
             <span>62.8K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="pagina_dota2.html">Ver Comunidad</a>
         </article>
- 
+
         <article>
           <img src="imagenes/smite2.jpg" alt="Smite 2">
           <h3>Smite 2</h3>
@@ -207,122 +218,123 @@
             <span>2.8M</span>
             <span>23.1K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="pagina_smite2.html">Ver Comunidad</a>
         </article>
- 
       </div>
-    </section>
- 
- 
-    <section>
-      <h2>Sandbox (3)</h2>
- 
-      <div class="cards">
- 
+
+      <button class="arrow right">❯</button>
+  </div>
+</section>
+<section>
+  <h2>Multijugador </h2>
+
+  <div class="carousel">
+      <button class="arrow left">❮</button>
+
+      <div class="cards scroll">
         <article>
           <img src="imagenes/minecraft2.webp" alt="Minecraft">
           <h3>Minecraft</h3>
-          <span>Sandbox</span>
+          <span>Multijugador</span>
           <span>4.8</span>
           <p>Creatividad infinita en bloques</p>
           <div>
             <span>12.4M</span>
             <span>95.2K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="pagina_minecraft.html">Ver Comunidad</a>
         </article>
- 
+
         <article>
           <img src="imagenes/terraroa.jpg" alt="Terraria">
           <h3>Terraria</h3>
-          <span>Sandbox</span>
+          <span>Multijugador</span>
           <span>4.7</span>
-          <p>Aventura sandbox en 2D con exploración</p>
+          <p>Aventura Multijugador en 2D con exploración</p>
           <div>
             <span>5.6M</span>
             <span>48.9K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="pagina_terraria.html">Ver Comunidad</a>
         </article>
- 
+
         <article>
           <img src="imagenes/roblox (2).png" alt="Roblox">
           <h3>Roblox</h3>
-          <span>Sandbox</span>
+          <span>Multijugador</span>
           <span>4.5</span>
           <p>Plataforma de creación de juegos</p>
           <div>
             <span>10.2M</span>
             <span>82.5K</span>
           </div>
-          <a href="#">Ver Comunidad</a>
+          <a href="pagina_roblox.html">Ver Comunidad</a>
         </article>
- 
       </div>
-    </section>
- 
-  </main>
- 
-  <footer>
- 
+
+      <button class="arrow right">❯</button>
+  </div>
+</section>
+<!-- ================= FOOTER ================= -->
+<footer>
     <div class="footer-columns">
- 
+
       <div>
         <img src="imagenes/logo1.png" alt="logo">
         <h3>GameHub</h3>
         <p>Tu comunidad gaming definitiva</p>
       </div>
- 
+
       <div>
         <h3>Plataforma</h3>
         <ul>
-          <li><a href="">Jugadores</a></li>
-          <li><a href="">Equipos</a></li>
-          <li><a href="">Desarrolladores</a></li>
-          <li><a href="">Creadores</a></li>
+          <li><a>Jugadores</a></li>
+          <li><a>Equipos</a></li>
+          <li><a>Desarrolladores</a></li>
+          <li><a>Creadores</a></li>
         </ul>
       </div>
- 
+
       <div>
         <h3>Características</h3>
         <ul>
-          <li><a href="">Comunidades</a></li>
-          <li><a href="">Torneos</a></li>
-          <li><a href="">Estadísticas</a></li>
-          <li><a href="">API Gaming</a></li>
+          <li><a>Comunidades</a></li>
+          <li><a>Torneos</a></li>
+          <li><a>Estadísticas</a></li>
+          <li><a>API Gaming</a></li>
         </ul>
       </div>
- 
+
       <div>
         <h3>Aprende más</h3>
         <ul>
-          <li><a href="">Blog</a></li>
-          <li><a href="">Guías</a></li>
-          <li><a href="">Noticias</a></li>
-          <li><a href="">Tutoriales</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Guías</a></li>
+          <li><a>Noticias</a></li>
+          <li><a>Tutoriales</a></li>
         </ul>
       </div>
- 
+
       <div>
         <h3>Soporte</h3>
         <ul>
-          <li><a href="">Contacto</a></li>
-          <li><a href="">Ayuda</a></li>
-          <li><a href="">Legal</a></li>
-          <li><a href="">Privacidad</a></li>
+          <li><a>Contacto</a></li>
+          <li><a>Ayuda</a></li>
+          <li><a>Legal</a></li>
+          <li><a>Privacidad</a></li>
         </ul>
       </div>
- 
+
     </div>
+
     <div class="footer-bottom">
       <p>© 2024 GameHub. Todos los derechos reservados.</p>
       <nav>
-        <a href="">Términos</a>
-        <a href="">Privacidad</a>
-        <a href="">Cookies</a>
+        <a>Términos</a>
+        <a>Privacidad</a>
+        <a>Cookies</a>
       </nav>
     </div>
-  </footer>
-  <link rel="stylesheet" href="style.css">
+</footer>
 </body>
 </html>

@@ -101,22 +101,18 @@ img {
 }
  
 .profile-btn {
-  background: #1b1b1b;
-  border: 1px solid #2e2e2e;
-  padding: .55rem 1rem;
+  padding: 8px 16px;
+  background-color: #111;
+
   color: #fff;
-  border-radius: 14px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: 600;
-  display: flex;
-  gap: .4rem;
-  align-items: center;
-  transition: .25s;
+  text-decoration: none; /* para el <a> */
 }
- 
+
 .profile-btn:hover {
-  background: #262626;
-  border-color: #ff2b2b;
+  background-color:  #b30000;
 }
  
 .categories ul {
@@ -291,3 +287,59 @@ footer {
 .footer-bottom a:hover {
   color: var(--red);
 }
+/* ================= CARRUSEL ================= */
+
+.carousel {
+    position: relative;
+    width: 100%;
+}
+
+.cards.scroll {
+    display: flex;
+    flex-wrap: nowrap;     /* NO permite moverse hacia abajo */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 30px;             /* respeta tu espacio original */
+    padding: 20px 5px;
+}
+
+.cards.scroll article {
+    flex: 0 0 350px;       /* 🔥 tamaño fijo EXACTO */
+    max-width: 350px;
+}
+
+/* Ocultar scroll */
+.cards.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow {
+    background: black;
+    color: white;
+    border: none;
+    font-size: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+}
+
+.arrow:hover {
+  background: #b30000;
+}
+
+.arrow.left {
+  left: -20px;
+}
+
+.arrow.right {
+  right: -20px;
+}
+
+
+
