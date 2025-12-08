@@ -9,6 +9,7 @@
     --red-dark: #b30000;
     --radius: 14px;
     --border: #2a0a0a;
+    --transition: 0.25s ease;
 }
 
 /* ======== CONFIGURACIÓN GENERAL ======== */
@@ -226,43 +227,6 @@ a.volver {
 }
 
 .evento {
-    margin-top: 20px;
-}
-
-.evento-img {
-    width: 100%;
-    height: 120px;
-    background: #444;
-    border-radius: var(--radius);
-    margin-bottom: 10px;
-}
-
-.evento small {
-    color: var(--text-muted);
-}
-/* Input de comentario personalizado */
-.comment-input {
-  width: 100%;
-  padding: 10px;
-  margin-top: 8px;
-  border-radius: var(--radius);
-  border: 1px solid var(--red-light);
-  background-color: var(--bg-card);
-  color: var(--text);
-  font-size: 0.9rem;
-  transition: border-color var(--transition), box-shadow var(--transition);
-}
-
-.comment-input::placeholder {
-  color: var(--text-muted);
-}
-
-.comment-input:focus {
-  outline: none;
-  border-color: var(--red);
-
-}
-.evento {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -271,6 +235,7 @@ a.volver {
     border-radius: var(--radius);
     margin-bottom: 10px;
 }
+
 .evento-img {
     width: 60px;
     height: 60px;
@@ -285,6 +250,7 @@ a.volver {
     height: 100%;
     object-fit: cover;
 }
+<<<<<<< HEAD
 /* ======================================================
    RESPONSIVE — TABLETS
    ====================================================== */
@@ -486,3 +452,33 @@ a.volver {
         padding: 25px;
     }
 }
+=======
+
+.evento small {
+    color: var(--text-muted);
+}
+
+/* Input de comentario personalizado */
+.comment-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: var(--radius);
+  border: 1px solid var(--red-light);
+  background-color: var(--bg-card);
+  color: var(--text);
+  font-size: 0.9rem;
+  transition: border-color var(--transition);
+}
+
+.comment-input::placeholder {
+  color: var(--text-muted);
+}
+
+.comment-input:focus {
+  outline: none;
+  border-color: var(--red);
+}
+
+
+>>>>>>> 3ff3a0c5f6995fa12d385f40652c96eb76eb18f5
