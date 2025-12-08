@@ -285,3 +285,204 @@ a.volver {
     height: 100%;
     object-fit: cover;
 }
+/* ======================================================
+   RESPONSIVE — TABLETS
+   ====================================================== */
+@media (max-width: 992px) {
+
+    /* HEADER */
+    header.header {
+        padding: 15px 30px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search input {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    main.contenido {
+        width: 94%;
+    }
+
+    /* LAYOUT CAMBIO A 1 COLUMNA */
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+
+    /* POSTS */
+    .posts .post {
+        flex-direction: column;
+    }
+
+    .user-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    /* BANNER */
+    .banner-juego {
+        height: 240px;
+    }
+
+    .banner-img {
+        height: 240px;
+    }
+
+    .banner-info h1 {
+        font-size: 26px;
+    }
+
+    .stats {
+        right: 20px;
+        gap: 15px;
+    }
+}
+
+/* ======================================================
+   RESPONSIVE — CELULAR
+   ====================================================== */
+@media (max-width: 600px) {
+
+    /* HEADER */
+    header.header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .logo img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .user-area {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    /* BANNER */
+    .banner-juego {
+        height: 200px;
+    }
+
+    .banner-img {
+        height: 200px;
+    }
+
+    .banner-info {
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .banner-info h1 {
+        font-size: 22px;
+    }
+
+    .stats {
+        position: static;
+        margin-top: 10px;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    /* TABS */
+    .tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 5px;
+    }
+
+    .tab {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    /* POSTS */
+    .posts .post {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .post-content p {
+        font-size: 0.9rem;
+    }
+
+    .post-actions {
+        font-size: 13px;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+        padding: 15px;
+    }
+
+    .evento {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .evento-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .evento small {
+        font-size: 13px;
+    }
+
+    /* INPUT DE COMENTARIO */
+    .comment-input {
+        font-size: 0.85rem;
+        padding: 9px;
+    }
+
+    /* CONTENIDO PRINCIPAL */
+    main.contenido {
+        width: 92%;
+        margin: 100px auto;
+    }
+}
+
+/* ======================================================
+   PANTALLAS GRANDES (PC +1400px)
+   ====================================================== */
+@media (min-width: 1400px) {
+
+    main.contenido {
+        max-width: 1600px;
+    }
+
+    .banner-juego {
+        height: 330px;
+    }
+
+    .banner-img {
+        height: 330px;
+    }
+
+    .banner-info h1 {
+        font-size: 36px;
+    }
+
+    .layout {
+        gap: 40px;
+    }
+
+    .posts .post {
+        padding: 25px;
+    }
+
+    .sidebar {
+        padding: 25px;
+    }
+}

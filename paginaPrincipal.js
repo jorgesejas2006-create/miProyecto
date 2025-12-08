@@ -46,4 +46,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+document.addEventListener("DOMContentLoaded", () => {
+
+    const botonHamburguesa = document.getElementById("botonHamburguesa");
+    const menuMovil = document.getElementById("menuMovil");
+
+    botonHamburguesa.addEventListener("click", () => {
+        menuMovil.classList.toggle("abierto");
+    });
+
+});
+/* ===================== MENÚ HAMBURGUESA ===================== */
+  const botonHamburguesa = document.getElementById('botonHamburguesa');
+  const menuHamburguesa = document.getElementById('menuHamburguesa');
+
+  botonHamburguesa.addEventListener('click', () => {
+    botonHamburguesa.classList.toggle('abrir');   // Animación del botón
+    menuHamburguesa.classList.toggle('mostrar');  // Mostrar/ocultar menú lateral
+  });
+
+  menuHamburguesa.querySelectorAll('a').forEach(enlace => {
+    enlace.addEventListener('click', () => {
+      botonHamburguesa.classList.remove('abrir');
+      menuHamburguesa.classList.remove('mostrar');
+    });
+  });
 
