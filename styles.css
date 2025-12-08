@@ -250,7 +250,6 @@ a.volver {
     height: 100%;
     object-fit: cover;
 }
-<<<<<<< HEAD
 /* ======================================================
    RESPONSIVE — TABLETS
    ====================================================== */
@@ -452,8 +451,6 @@ a.volver {
         padding: 25px;
     }
 }
-=======
-
 .evento small {
     color: var(--text-muted);
 }
@@ -479,6 +476,3 @@ a.volver {
   outline: none;
   border-color: var(--red);
 }
-
-
->>>>>>> 3ff3a0c5f6995fa12d385f40652c96eb76eb18f5
